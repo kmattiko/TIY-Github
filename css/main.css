@@ -95,7 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.menu-tabs li {
+.tabs li {
   display: inline-block;
   padding: .4em 5em .4em 5em;
   font-size: 1.5em;
@@ -104,7 +104,7 @@ textarea {
   text-align: center;
 }
 
-.menu-tabs a {
+.tabs a {
   text-decoration: none;
 }
 
@@ -113,15 +113,72 @@ textarea {
   color:blue;
 }
 
-img.resize {
-  size: 20%;
+img {
+  float: left;
+  padding-left: 1em;
 }
 
+.profile {
+  padding-left: 9em;
+}
 
+#tab1 p {
+  font-size: .8em;
+}
 
+#tab1 a {
+  text-decoration: none;
+}
 
+button {
+  display: block;
+  margin-left: 3%;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  width: 94%;
+  background-color: lightgreen;
+}
 
+.media li {
+  display: inline-block;
+  width: 90%;
+  float: right;
+}
 
+.media {
+  border: 1em solid #F8F8F8;
+}
+
+.repos ul {
+  display: block;
+  border: .2em solid lightgrey;
+}
+
+.repos li {
+  padding-top: 1.7em;
+  padding-left: .5em;
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.repos li ul {
+  border: .2em solid lightgrey;
+}
+
+.repos p {
+  float: right;
+  padding-right: 3em;
+}
+
+.repos a {
+  text-decoration: none;
+  color: blue;
+}
+
+.repos {
+  border: 1em solid #F8F8F8;
+}
 
 
 

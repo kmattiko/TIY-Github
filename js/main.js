@@ -1,3 +1,3 @@
 $(".tabs").click()
-  $('.tabs').removeClass("current");
+  $('tabs').removeClass("current");
   $(this).addClass("current");
