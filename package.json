@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run bower:install",
+    "bower:install": "bower install --save",
+    "postbower:install": "wiredep --src src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --server --files='index.html, js/**/* .js,css/**/* .css/'"
   },
@@ -16,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/kmattiko/TIY-Github/issues"
   },
-  "homepage": "https://github.com/kmattiko/TIY-Github"
+  "homepage": "https://github.com/kmattiko/TIY-Github",
+  "devDependencies": {
+    "wiredep": "^2.2.2"
+  }
 }
