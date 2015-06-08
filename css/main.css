@@ -146,19 +146,22 @@ button {
 }
 
 .media {
+  display: inline-block;
+  width: 96%;
   border: 1em solid #F8F8F8;
 }
 
 .repos ul {
-  display: block;
+  display: inline-block;
   border: .2em solid lightgrey;
 }
 
 .repos li {
+  border: .2em solid lightgrey;
   padding-top: 1.7em;
   padding-left: .5em;
   display: block;
-  width: 100%;
+  width: 95%;
   float: left;
 }
 
