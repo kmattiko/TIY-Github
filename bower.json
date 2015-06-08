@@ -2,6 +2,7 @@
   "name": "tiy-github",
   "private": true,
   "dependencies": {
+    "octicons" : "*",
     "chai": "~1.8.0",
     "mocha": "~1.14.0"
   },
