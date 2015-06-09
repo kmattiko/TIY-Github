@@ -8,7 +8,7 @@
     "bower:install": "bower install --save",
     "postbower:install": "wiredep --src src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files='index.html, js/**/* .js,css/**/* .css/'"
+    "start": "browser-sync start --server --files='src/index.html, src/js/**/* .js,src/css/**/* .css/' --startPath src/index.html"
   },
   "repository": {
     "type": "git",
