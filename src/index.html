@@ -1,132 +1,176 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- bower:css -->
-        <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
-        <!-- endbower -->
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="test/bower_components/octicons/octicons/octicons.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
 
-      <section class="grid">
-        <div class="unit">1</div>
-        <div class="unit">2</div>
-        <div class="unit">3</div>
-        <div class="unit">4</div>
-        <div class="unit">5</div>
-        <div class="unit">6</div>
-        <div class="unit">7</div>
-        <div class="unit">8</div>
-      </section>
-      <section class="grid">
-        <div class="unit-span-2">2 col</div>
-        <div class="unit-span-4">4 col</div>
-        <div class="unit-span-2">2 col</div>
-      </section>
-      <section class= "grid-span">
-        <div class="unit-span-4.offset-2">.unit-span-4.offset-2</div>
-      </section>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bower:css -->
+  <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+  <!-- endbower -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../bower_components/octicons/octicons/octicons.css">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
 
+<body>
 
+  <section class="grid">
+    <div class="unit 1"></div>
+    <div class="unit 2"></div>
+    <div class="unit 3"></div>
+    <div class="unit 4"></div>
+    <div class="unit 5"></div>
 
+  <!-- <div class="unit-3">
       <select>
         <option>Octocat</option>
         <option>Kmattiko</option>
       </select>
+      <a>
+        <span class="octicon octicon-mark-github"></span>
+      </a>
+    </div> -->
 
-      <div class= "topper">
-       <div class= "tabs">
-         <a><span class="octicon octicon-mark-github"></span></a>
+    <div class="unit-2-5">
+      <img src="http://lorempixel.com/output/cats-q-c-400-400-1.jpg">
+    </div>
+
+
+    <div class="unit-3-5">
+      <div class="repos">
         <ul>
-         <li class="current"><a href="#tab1">About</a></li><li><a href="#tab2">Repositories</a></li>
+          <h4>Popular repositories</h4>
+          <li>
+            <a href="https://github.com/octocat/Spoon-Knife">octocat/Spoon-Knife</a>
+            <p>9.772</p>
+          </li>
+          <li>
+            <a href="https://github.com/octocat/Hello-World">octocat/Hello-World</a>
+            <p>1,404</p>
+          </li>
+          <li>
+            <a href="https://github.com/octocat/hello-worId">octocat/hello-world</a>
+            <p>10</p>
+          </li>
+          <li>
+            <a href="https://github.com/octocat/octocat.github.io">octocat/octocat.github.io</a>
+            <p>8</p>
+          </li>
+          <li>
+            <a href="https://github.com/octocat/git-consortium">octocat/git-consortium</a>
+            <p>2</p>
+          </li>
         </ul>
-       </div>
+      </div>
+    </div>
 
-       <div class="tab-content">
 
-         <div id="tab1" class="tab current">
-           <img style="height:auto; width:auto; max-width:7em; max-height:7em;" src={{avatar_url}}>
-           <div class="profile">
-           <h3>{{name}}</h3>
-              <p>{{login}}</p>
-              <ul>
-                <li>
-                  <a href={{company}}></a>
-                </li>
-                <li>
-                  <a href={{location}}></a>
-                </li>
-                <li>
-                  <a href={{email}}></a>
-                </li>
-                <li>
-                  <a href={{blog}}></a>
-                </li>
-              </ul>
-            </div>
+
+  </section>
+
+
+
+
+<!--  <select>
+    <option>Octocat</option>
+    <option>Kmattiko</option>
+  </select>
+
+  <div class="topper">
+    <div class="tabs">
+      <a>
+        <span class="octicon octicon-mark-github"></span>
+      </a>
+      <ul>
+        <li class="current"><a href="#tab1">About</a></li>
+        <li><a href="#tab2">Repositories</a></li>
+      </ul>
+    </div>
+
+    <div class="tab-content">
+
+      <div id="tab1" class="tab current">
+
+
+
+        <div class="profile">
+          <h3 id=profileName>{{name}}</h3>
+          <p>{{login}}</p>
+          <ul>
+            <li>
+              <a href={{company}}></a>
+            </li>
+            <li>
+              <a href={{location}}></a>
+            </li>
+            <li>
+              <a href={{email}}></a>
+            </li>
+            <li>
+              <a href={{blog}}></a>
+            </li>
+          </ul>
         </div>
-
-        <div class="social">
-          <button>Follow</button>
-          <ul class="media">
-            <li>Followers</li>
-              <p>{{followers}}</p>
-            <li>Starred</li>
-              <p>2</p>
-            <li>Following</li>
-              <p>{{following}}</p>
-            </ul>
-          </div>
-
-          <div class="repos">
-            <ul>
-              <h4>Popular repositories</h4>
-              <li>
-                <a href="https://github.com/octocat/Spoon-Knife">octocat/Spoon-Knife</a>
-                <p>9.772</p>
-              </li>
-              <li>
-                <a href="https://github.com/octocat/Hello-World">octocat/Hello-World</a>
-                <p>1,404</p>
-              </li>
-              <li>
-                <a href="https://github.com/octocat/hello-worId">octocat/hello-world</a>
-                <p>10</p>
-              </li>
-              <li>
-                <a href="https://github.com/octocat/octocat.github.io">octocat/octocat.github.io</a>
-                <p>8</p>
-              </li>
-              <li>
-                <a href="https://github.com/octocat/git-consortium">octocat/git-consortium</a>
-                <p>2</p>
-              </li>
-            </ul>
-          </div>
-
-         <div id="tab2" class="tab">
-         </div>
-
-       </div>
       </div>
 
+      <div class="social">
+        <button>Follow</button>
+        <ul class="media">
+          <li>Followers</li>
+          <p>{{followers}}</p>
+          <li>Starred</li>
+          <p>2</p>
+          <li>Following</li>
+          <p>{{following}}</p>
+        </ul>
+      </div>
 
-        <!--bower:js-->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <script src="../bower_components/chai/chai.js"></script>
-        <script src="../bower_components/mocha/mocha.js"></script>
-        <!--endbower-->
+      <div class="repos">
+        <ul>
+          <h4>Popular repositories</h4>
+          <li>
+            <a href="https://github.com/octocat/Spoon-Knife">octocat/Spoon-Knife</a>
+            <p>9.772</p>
+          </li>
+          <li>
+            <a href="https://github.com/octocat/Hello-World">octocat/Hello-World</a>
+            <p>1,404</p>
+          </li>
+          <li>
+            <a href="https://github.com/octocat/hello-worId">octocat/hello-world</a>
+            <p>10</p>
+          </li>
+          <li>
+            <a href="https://github.com/octocat/octocat.github.io">octocat/octocat.github.io</a>
+            <p>8</p>
+          </li>
+          <li>
+            <a href="https://github.com/octocat/git-consortium">octocat/git-consortium</a>
+            <p>2</p>
+          </li>
+        </ul>
+      </div>
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+      <div id="tab2" class="tab">
+      </div>
 
-      </script>
-    </body>
+    </div>
+  </div> -->
+
+
+  <!--bower:js-->
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/chai/chai.js"></script>
+  <script src="../bower_components/mocha/mocha.js"></script>
+  <!--endbower-->
+
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
 </html>

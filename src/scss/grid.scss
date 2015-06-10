@@ -1,43 +1,40 @@
 
 .grid {
-  $grid-width: 100%;
-  max-width: 80%;
 
   @extend .clearfix;
 
-   width: $grid-width;
-   margin: 0 auto;
+  $grid-width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
 
-   background-color: lightgrey;
-   outline: 2px solid red;
+  width: $grid-width;
 
-  .unit {
-    background-color: grey;
-    outline: 2px solid purple;
+
+  $unit-width: ($grid-width/5);
+
+
+  .unit-1-5 {
+    width: $unit-width;
     float: left;
-    width: ($grid-width/8);
+  }
+
+  .unit-2-5 {
+    @extend .unit-1-5;
+    width: $unit-width * 2;
+
+  }
+
+  .unit-3-5 {
+    @extend .unit-1-5;
+    width: $unit-width * 3;
+  }
+
+
+  /*  outline: 2px solid purple;
+    width: ($grid-width/5);
+    float: left;
       padding-left: 1em;
       padding-right: 1em;
-      box-sizing: border-box;
-      &:first-child {
-        padding-left:0;
-      }
-      }
+      box-sizing: border-box;*/
 
-  }
-  .unit-span-2 {
-    @extend .unit;
-
-    width: ($grid-width/8) * 2;
-  }
-  .unit-span-4 {
-    @extend .unit;
-
-    width: ($grid-width/8) * 4;
-  }
-  .offset-2 {
-    @extend .unit;
-
-    width: ($grid-width/8) * 2;
-  }
 }

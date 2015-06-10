@@ -77,33 +77,43 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.repos {
+  background-color: purple; }
+
+/*
 .tabs li {
   display: inline-block;
   padding: .5% 10% .5% 10%;
   font-size: 1.5em;
   border: .1em solid lightgrey;
   width: 25%;
-  text-align: center; }
+  text-align: center;
+}
 
 .tabs a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .tabs::current {
   background-color: red;
-  color: blue; }
+  color:blue;
+}
 
 img {
   float: left;
-  padding-left: 1em; }
+}
 
 .profile {
-  padding-left: 9em; }
+  padding-left: 9em;
+}
 
 #tab1 p {
-  font-size: .8em; }
+  font-size: .8em;
+}
 
 #tab1 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 button {
   display: block;
@@ -111,59 +121,38 @@ button {
   padding-top: .5em;
   padding-bottom: .5em;
   width: 94%;
-  background-color: lightgreen; }
+  background-color: lightgreen;
+}
 
 .media li {
   display: inline-block;
   width: 90%;
-  float: right; }
+  float: right;
+}
 
 .media {
   display: inline-block;
   width: 96%;
-  border: 1em solid #F8F8F8; }
-
-.repos ul {
-  display: inline-block;
-  border: .2em solid lightgrey; }
-
-.repos li {
-  border: .2em solid lightgrey;
-  padding-top: 1.7em;
-  padding-left: .5em;
-  display: block;
-  width: 95%;
-  float: left; }
-
-.repos li ul {
-  border: .2em solid lightgrey; }
-
-.repos p {
-  float: right;
-  padding-right: 3em; }
-
-.repos a {
-  text-decoration: none;
-  color: blue; }
-
-.repos {
-  border: 1em solid #F8F8F8; }
-
+  border: 1em solid #F8F8F8;
+}
+*/
 .grid {
   max-width: 80%;
-  width: 100%;
   margin: 0 auto;
-  background-color: lightgrey;
-  outline: 2px solid red; }
-  .grid .unit, .grid .unit-span-2, .grid .unit-span-4 {
-    background-color: grey;
-    outline: 2px solid purple;
+  width: 100%;
+  /*  outline: 2px solid purple;
+    width: ($grid-width/5);
     float: left;
-    width: 12.5%; }
-  .grid .unit-span-2 {
-    width: 25%; }
-  .grid .unit-span-4 {
-    width: 50%; }
+      padding-left: 1em;
+      padding-right: 1em;
+      box-sizing: border-box;*/ }
+  .grid .unit-1-5, .grid .unit-2-5, .grid .unit-3-5 {
+    width: 20%;
+    float: left; }
+  .grid .unit-2-5 {
+    width: 40%; }
+  .grid .unit-3-5 {
+    width: 60%; }
 
 /* ==========================================================================
    Helper classes
