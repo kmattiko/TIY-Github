@@ -1,3 +1,4 @@
-main.css
-normalize.css
-*.css
+*
+.*
+!.gitignore
+!.gitignore

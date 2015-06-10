@@ -149,6 +149,22 @@ button {
 .repos {
   border: 1em solid #F8F8F8; }
 
+.grid {
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: lightgrey;
+  outline: 2px solid red; }
+  .grid .unit, .grid .unit-span-2, .grid .unit-span-4 {
+    background-color: grey;
+    outline: 2px solid purple;
+    float: left;
+    width: 12.5%; }
+  .grid .unit-span-2 {
+    width: 25%; }
+  .grid .unit-span-4 {
+    width: 50%; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -204,13 +220,14 @@ button {
  *    `:before` to contain the top-margins of child elements.
  */
 .clearfix:before,
-.clearfix:after {
+.grid:before,
+.clearfix:after, .grid:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after {
+.clearfix:after, .grid:after {
   clear: both; }
 
 /* ==========================================================================
