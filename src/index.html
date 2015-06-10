@@ -25,22 +25,22 @@
        <div class="tab-content">
 
          <div id="tab1" class="tab current">
-           <img style="height:auto; width:auto; max-width:7em; max-height:7em;" src="https://avatars3.githubusercontent.com/u/583231?v=3&s=400">
+           <img style="height:auto; width:auto; max-width:7em; max-height:7em;" src={{avatar_url}}>
            <div class="profile">
-           <h3>The Octocat</h3>
-              <p>octocat</p>
+           <h3>{{name}}</h3>
+              <p>{{login}}</p>
               <ul>
                 <li>
-                  <a href="https://www.github.com">Github</a>
+                  <a href={{company}}></a>
                 </li>
                 <li>
-                  <a href="https://www.google.com/maps">Location</a>
+                  <a href={{location}}></a>
                 </li>
                 <li>
-                  <a href="https://www.gmail.com">octocat@github.com</a>
+                  <a href={{email}}></a>
                 </li>
                 <li>
-                  <a href="https://github.com/blog">http://www.github.com/blog</a>
+                  <a href={{blog}}></a>
                 </li>
               </ul>
             </div>
@@ -49,12 +49,12 @@
         <div class="social">
           <button>Follow</button>
           <ul class="media">
-            <li>followers</li>
-              <p>1K</p>
+            <li>Followers</li>
+              <p>{{followers}}</p>
             <li>Starred</li>
               <p>2</p>
             <li>Following</li>
-              <p>6</p>
+              <p>{{following}}</p>
             </ul>
           </div>
 
@@ -99,6 +99,7 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        
 
     </body>
 </html>
