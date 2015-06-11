@@ -16,68 +16,90 @@
 </head>
 
 <body>
+  <div="menu">
+    <select>
+      <option>Octocat</option>
+      <option>Kmattiko</option>
+    </select>
+    <a>
+      <span class="octicon octicon-mark-github"></span>
+    </a>
+  </div>
 
-  <section class="grid">
-    <div class="unit 1"></div>
-    <div class="unit 2"></div>
-    <div class="unit 3"></div>
-    <div class="unit 4"></div>
-    <div class="unit 5"></div>
-
-  <!-- <div class="unit-3">
-      <select>
-        <option>Octocat</option>
-        <option>Kmattiko</option>
-      </select>
-      <a>
-        <span class="octicon octicon-mark-github"></span>
-      </a>
-    </div> -->
-
-    <div class="unit-2-5">
-      <img src="http://lorempixel.com/output/cats-q-c-400-400-1.jpg">
-    </div>
+    <section class="grid">
 
 
-    <div class="unit-3-5">
-      <div class="repos">
+      <div class="unit-2-5">
+        <img id="profilePic" src="http://lorempixel.com/output/cats-q-c-400-400-1.jpg">
+      </div>
+
+      <div class="unit-3-5">
+        <div class="repos">
+          <ul>
+            <h4>Popular repositories</h4>
+            <li>
+              <a href="https://github.com/octocat/Spoon-Knife">octocat/Spoon-Knife</a>
+              <p>9.772</p>
+            </li>
+            <li>
+              <a href="https://github.com/octocat/Hello-World">octocat/Hello-World</a>
+              <p>1,404</p>
+            </li>
+            <li>
+              <a href="https://github.com/octocat/hello-worId">octocat/hello-world</a>
+              <p>10</p>
+            </li>
+            <li>
+              <a href="https://github.com/octocat/octocat.github.io">octocat/octocat.github.io</a>
+              <p>8</p>
+            </li>
+            <li>
+              <a href="https://github.com/octocat/git-consortium">octocat/git-consortium</a>
+              <p>2</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class "unit-2-5">
+      <div class="profile">
+        <h3 id=profileName>{{name}}</h3>
+        <p id="logins">{{login}}</p>
         <ul>
-          <h4>Popular repositories</h4>
+          <li id="company">{{company}}</li>
+          <li id="location">{{location}}</li>
           <li>
-            <a href="https://github.com/octocat/Spoon-Knife">octocat/Spoon-Knife</a>
-            <p>9.772</p>
+            <a id="email" href="#">{{email}}</a>
           </li>
           <li>
-            <a href="https://github.com/octocat/Hello-World">octocat/Hello-World</a>
-            <p>1,404</p>
-          </li>
-          <li>
-            <a href="https://github.com/octocat/hello-worId">octocat/hello-world</a>
-            <p>10</p>
-          </li>
-          <li>
-            <a href="https://github.com/octocat/octocat.github.io">octocat/octocat.github.io</a>
-            <p>8</p>
-          </li>
-          <li>
-            <a href="https://github.com/octocat/git-consortium">octocat/git-consortium</a>
-            <p>2</p>
+            <a id="blog" href="#">{{blog}}</a>
           </li>
         </ul>
       </div>
     </div>
 
+    <div class="social">
+      <ul class="media">
+        <li>Followers</li>
+        <p>{{followers}}</p>
+        <li>Starred</li>
+        <p>2</p>
+        <li>Following</li>
+        <p>{{following}}</p>
+      </ul>
+    </div>
+  </div>
 
 
-  </section>
+
+
+    </section>
 
 
 
 
-<!--  <select>
-    <option>Octocat</option>
-    <option>Kmattiko</option>
-  </select>
+    <!--
 
   <div class="topper">
     <div class="tabs">
@@ -161,14 +183,14 @@
   </div> -->
 
 
-  <!--bower:js-->
-  <script src="../bower_components/jquery/dist/jquery.js"></script>
-  <script src="../bower_components/chai/chai.js"></script>
-  <script src="../bower_components/mocha/mocha.js"></script>
-  <!--endbower-->
+    <!--bower:js-->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/chai/chai.js"></script>
+    <script src="../bower_components/mocha/mocha.js"></script>
+    <!--endbower-->
 
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 
 </body>

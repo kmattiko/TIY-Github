@@ -77,43 +77,32 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.repos {
-  background-color: purple; }
-
-/*
 .tabs li {
   display: inline-block;
   padding: .5% 10% .5% 10%;
   font-size: 1.5em;
   border: .1em solid lightgrey;
   width: 25%;
-  text-align: center;
-}
+  text-align: center; }
 
 .tabs a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .tabs::current {
   background-color: red;
-  color:blue;
-}
+  color: blue; }
 
 img {
-  float: left;
-}
+  float: left; }
 
 .profile {
-  padding-left: 9em;
-}
+  padding-left: 9em; }
 
 #tab1 p {
-  font-size: .8em;
-}
+  font-size: .8em; }
 
 #tab1 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 button {
   display: block;
@@ -121,21 +110,21 @@ button {
   padding-top: .5em;
   padding-bottom: .5em;
   width: 94%;
-  background-color: lightgreen;
-}
+  background-color: lightgreen; }
 
 .media li {
   display: inline-block;
   width: 90%;
-  float: right;
-}
+  float: right; }
 
 .media {
   display: inline-block;
   width: 96%;
-  border: 1em solid #F8F8F8;
-}
-*/
+  border: 1em solid #F8F8F8; }
+
+.repos {
+  border: .5em solid black; }
+
 .grid {
   max-width: 80%;
   margin: 0 auto;
