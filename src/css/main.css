@@ -79,51 +79,40 @@ textarea {
    ========================================================================== */
 .tabs li {
   display: inline-block;
-  padding: .5% 10% .5% 10%;
-  font-size: 1.5em;
+  padding: 0.4em 0.7em 0.4em 0.7em;
+  font-size: 1.2em;
   border: .1em solid lightgrey;
-  width: 25%;
-  text-align: center; }
-
-.tabs a {
-  text-decoration: none; }
-
-.tabs::current {
-  background-color: red;
-  color: blue; }
+  width: 18%;
+  font-size: 1em;
+  text-align: center;
+  float: left; }
 
 img {
   float: left; }
 
-.profile {
-  padding-left: 9em; }
-
-#tab1 p {
-  font-size: .8em; }
-
-#tab1 a {
-  text-decoration: none; }
-
-button {
-  display: block;
-  margin-left: 3%;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  width: 94%;
+.follow button {
+  display: inline-block;
+  margin-left: 80%;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  color: white;
   background-color: lightgreen; }
 
 .media li {
   display: inline-block;
-  width: 90%;
-  float: right; }
-
-.media {
-  display: inline-block;
-  width: 96%;
-  border: 1em solid #F8F8F8; }
+  width: 25%;
+  float: left; }
 
 .repos {
-  border: .5em solid black; }
+  border: .2em solid darkgrey; }
+  .repos li {
+    border: .2em solid darkgrey;
+    list-style-type: none; }
+  .repos a {
+    float: right; }
+
+.menu a {
+  margin: 0 auto; }
 
 .grid {
   max-width: 80%;
