@@ -1,0 +1,40 @@
+
+.grid {
+
+  @extend .clearfix;
+
+  $grid-width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+
+  width: $grid-width;
+
+
+  $unit-width: ($grid-width/5);
+
+
+  .unit-1-5 {
+    width: $unit-width;
+    float: left;
+  }
+
+  .unit-2-5 {
+    @extend .unit-1-5;
+    width: $unit-width * 2;
+
+  }
+
+  .unit-3-5 {
+    @extend .unit-1-5;
+    width: $unit-width * 3;
+  }
+
+
+  /*  outline: 2px solid purple;
+    width: ($grid-width/5);
+    float: left;
+      padding-left: 1em;
+      padding-right: 1em;
+      box-sizing: border-box;*/
+
+}
